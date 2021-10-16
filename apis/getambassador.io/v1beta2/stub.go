@@ -30,6 +30,16 @@ type Limit struct {
 	ErrorResponse ErrorResponse
 }
 
+type RateLimitAction struct {
+	int
+}
+
+var RateLimitAction_LOG_ONLY = RateLimitAction{1}
+
+func (a *RateLimitAction) ToString() string {
+	return ""
+}
+
 type RateLimitUnit struct {
 	int
 }
