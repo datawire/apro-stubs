@@ -1,3 +1,3 @@
 module github.com/datawire/apro
 
-go 1.17
+go 1.13
