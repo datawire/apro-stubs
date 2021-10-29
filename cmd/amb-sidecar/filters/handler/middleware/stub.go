@@ -10,8 +10,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	crd "github.com/datawire/apro/apis/getambassador.io/v1beta2"
-	"github.com/datawire/apro/lib/filterapi"
+	crd "github.com/datawire/apro/v2/apis/getambassador.io/v1beta2"
+	"github.com/datawire/apro/v2/lib/filterapi"
 )
 
 type requestIDContextKey struct{}
@@ -54,8 +54,8 @@ func NewTemplatedErrorResponse(
 ) *filterapi.HTTPResponse {
 	bodyData := errorData{
 		"status_code": httpStatus,
-		"message": err.Error(),
-		"request_id": ctx.Value(requestIDContextKey{}).(string),
+		"message":     err.Error(),
+		"request_id":  ctx.Value(requestIDContextKey{}).(string),
 	}
 	for k, v := range extra {
 		if _, set := bodyData[k]; !set {
