@@ -1,4 +1,4 @@
-module github.com/datawire/apro
+module github.com/datawire/apro/v2
 
 go 1.13
 

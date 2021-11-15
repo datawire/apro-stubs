@@ -1,7 +1,7 @@
 package licenselimiter
 
 import (
-	"github.com/datawire/apro/lib/licensekeys"
+	"github.com/datawire/apro/v2/lib/licensekeys"
 )
 
 type mockGauge struct{}
