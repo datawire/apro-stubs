@@ -10,7 +10,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	crd "github.com/datawire/apro/v2/apis/getambassador.io/v1beta2"
+	crd "github.com/datawire/apro/v2/apis/getambassador.io/v3alpha1"
 	"github.com/datawire/apro/v2/lib/filterapi"
 )
 
